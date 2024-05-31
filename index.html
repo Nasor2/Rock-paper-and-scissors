@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper, Rock and Scissors</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header >
+        <h1>Paper, Rock and Scissors</h1>
+    </header>
+
+    <main>
+        <div id="in_game">
+            <div class="title">
+                <h2>Choose:</h2>
+            </div>
+            <div class="utilities_container">
+                <div type="button" class="container" id="scissors">
+                    <img src="icons/scissors_icon-icons.com_50046.png" alt="scissors" class="images">
+                </div>
+                <div type="button" class="container" id="rock">
+                    <img src="icons/stone-pile_38505.png" alt="rock" class="images">
+                </div>
+                <div type="button" class="container" id="paper">
+                    <img src="icons/paper.png" alt="paper" class="images">
+                </div>
+            </div>
+            <div class="score_container">
+                <div class="score" id="player">
+                    <h1 class="title_score" id="title_player">Player</h1>
+                    <div class="emoji_chose">
+                        <p><span id="emoji_player"></span></p>
+                    </div>
+                    <h1 class="score_num" id="score_player">0</h1>
+                </div>
+                <div class="score" id="computer">
+                    <h1 class="title_score" id="title_computer">Computer</h1>
+                    <div class="emoji_chose" >
+                        <p><span id="emoji_computer"></span></p>
+                    </div>
+                    <h1 class="score_num" id="score_computer">0</h1>
+                </div>
+            </div>
+            <div id="message_container">
+                <h1 id="message"></h1>
+            </div>
+        </div>
+        <div id="end_game">
+            <h1 id="message_end">Perdiste concha de la lora</h1>
+            <div id="buttons">
+                <div type="button" class="button" id="why_lose">Why did i lose?</div>
+                <div type="button" class="button" id="try_again">Try Again</div>
+            </div>
+            <div class="video">
+                <video id="dumb"width="190" height="200"  autoplay loop>
+                    <source src="videos/dumb-regular-show.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            
+        </div>
+        
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
